@@ -1,0 +1,17 @@
+@media(min-width: 576px){
+    .company-logo, .box {
+        margin: 4rem;
+    }
+}
+
+@media(min-width: 768px){
+    body{
+        background-image: url('../images/bg-desktop.svg');
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .company-logo, .box {
+        margin: 6rem;
+    }
+}

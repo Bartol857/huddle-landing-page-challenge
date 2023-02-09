@@ -1,0 +1,94 @@
+@use './colors' as *;
+
+body {
+    min-height: 100vh;
+	font-family: 'Open Sans', sans-serif;
+	background-color: $violet;
+	background-image: url('../images/bg-mobile.svg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	color: $white;
+}
+
+.company-logo {
+	margin: 2rem;
+
+	img {
+		width: 150px;
+	}
+}
+
+.box {
+	margin: 4rem 2rem;
+	
+
+	img {
+		width: 100%;
+	}
+
+    &__inner{
+        margin-top: 4rem;
+        text-align: center;
+    }
+
+	&__title {
+		font-family: 'Poppins', sans-serif;
+		font-size: 1.6rem;
+	}
+
+	&__text {
+		font-size: 1.125rem;
+	}
+
+	&__btn {
+		padding: 0.75rem 6em;
+		font-family: 'Poppins', sans-serif;
+		background-color: $white;
+		color: $violet;
+		border: none;
+		border-radius: 25px;
+		box-shadow: 5px 5px 15px 0px $black;
+		transition: background-color 0.3s, color 0.3s;
+		cursor: pointer;
+	}
+
+	&__btn:hover {
+		background-color: $softmagenta;
+		color: $white;
+	}
+
+    &__social{
+        margin-top: 4rem;
+
+        i{
+            margin: .25rem;
+            padding: .5rem;
+            width: 15px;
+            height: 15px;
+            color: $white;
+            border: 1px solid $white;
+            border-radius: 50%;
+
+        }
+        i:hover{
+            color: $softmagenta;
+            border: 1px solid $softmagenta;
+        }
+    }
+
+	
+}
+
+footer {
+
+	.attribution {
+		font-size: 11px;
+		text-align: center;
+	}
+	.attribution a {
+		color: $softmagenta;
+	}
+}
+
+@import './tablet';
+@import './desktop';

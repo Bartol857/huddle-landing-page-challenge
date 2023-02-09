@@ -1,0 +1,129 @@
+body {
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  background-color: hsl(257deg, 40%, 49%);
+  background-image: url("../images/bg-mobile.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: hsl(0deg, 0%, 100%);
+}
+
+.company-logo {
+  margin: 2rem;
+}
+.company-logo img {
+  width: 150px;
+}
+
+.box {
+  margin: 4rem 2rem;
+}
+.box img {
+  width: 100%;
+}
+.box__inner {
+  margin-top: 4rem;
+  text-align: center;
+}
+.box__title {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+}
+.box__text {
+  font-size: 1.125rem;
+}
+.box__btn {
+  padding: 0.75rem 6em;
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(257deg, 40%, 49%);
+  border: none;
+  border-radius: 25px;
+  box-shadow: 5px 5px 15px 0px hsla(235deg, 10%, 20%, 0.6);
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+}
+.box__btn:hover {
+  background-color: hsl(300deg, 69%, 71%);
+  color: hsl(0deg, 0%, 100%);
+}
+.box__social {
+  margin-top: 4rem;
+}
+.box__social i {
+  margin: 0.25rem;
+  padding: 0.5rem;
+  width: 15px;
+  height: 15px;
+  color: hsl(0deg, 0%, 100%);
+  border: 1px solid hsl(0deg, 0%, 100%);
+  border-radius: 50%;
+}
+.box__social i:hover {
+  color: hsl(300deg, 69%, 71%);
+  border: 1px solid hsl(300deg, 69%, 71%);
+}
+
+footer .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+footer .attribution a {
+  color: hsl(300deg, 69%, 71%);
+}
+
+@media (min-width: 576px) {
+  .company-logo, .box {
+    margin: 4rem;
+  }
+}
+@media (min-width: 768px) {
+  body {
+    background-image: url("../images/bg-desktop.svg");
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .company-logo, .box {
+    margin: 6rem;
+  }
+}
+@media (min-width: 992px) {
+  .box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 400px;
+    gap: 2rem;
+  }
+  .box__img {
+    grid-column: 1/2;
+  }
+  .box__inner {
+    grid-column: 2/3;
+    margin: 0;
+    text-align: left;
+  }
+  .box__social {
+    position: absolute;
+    bottom: 10px;
+    right: 50px;
+  }
+  footer {
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .company-logo {
+    margin: 4rem 10rem;
+  }
+  .box {
+    margin: 8rem 10rem;
+  }
+  .box__social {
+    right: 10rem;
+  }
+  footer {
+    left: 10rem;
+  }
+}/*# sourceMappingURL=main.css.map */
